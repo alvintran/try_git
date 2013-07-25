@@ -7,11 +7,12 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
 **Method**
   
-    Str::constain($haystack, $needle);
+    Str::contains($haystack, $needle);
 
 **Example**
 
     Str::constain("http://mytour.vn/3059-khach-san-time-door.html", "time-door"); // return true
+    Str::constain("http://mytour.vn/3059-khach-san-time-door.html", array("time-door", "khach-san")); // return true
 
 ####~ Kiểm tra 1 chuỗi có bắt đầu bằng chuỗi khác không####
 
@@ -22,6 +23,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 **Example**
 
     Str::startsWith("http://mytour.vn/3059-khach-san-time-door.html", "http"); // return true
+    Str::startsWith("http://mytour.vn/3059-khach-san-time-door.html", "http, html"); // return true
 
 ####~ Kiểm tra 1 chuỗi có kết thúc bằng chuỗi khác không####
 
@@ -32,6 +34,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 **Example**
 
     Str::endsWith("http://mytour.vn/3059-khach-san-time-door.html", "html"); // return true
+    Str::endsWith("http://mytour.vn/3059-khach-san-time-door.html", "http, html"); // return true
 
 ####~ Cắt chuỗi với 1 số ký tự nhất định, tự kiểm tra vị trí dấu cách để trả về kết quả tròn từ####
 
