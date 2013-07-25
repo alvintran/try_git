@@ -1,9 +1,9 @@
 Lớp Str
 ======
 
-Lớp `Str` bao gồm các hàm static nên sử dụng chúng bạn không cần phải tạo thể hiện của lớp.
+Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hiện của lớp để sử dụng chúng.
 
-####Kiểm tra 1 chuỗi có chứa 1 chuỗi khác không####
+####$ Kiểm tra 1 chuỗi có chứa 1 chuỗi khác không####
 
 **Method**
   
@@ -13,7 +13,7 @@ Lớp `Str` bao gồm các hàm static nên sử dụng chúng bạn không cầ
 
     Str::constain("http://mytour.vn/3059-khach-san-time-door.html", "time-door"); // return true
 
-####Kiểm tra 1 chuỗi có bắt đầu bằng chuỗi khác không####
+####$ Kiểm tra 1 chuỗi có bắt đầu bằng chuỗi khác không####
 
 **Method**
 
@@ -21,9 +21,9 @@ Lớp `Str` bao gồm các hàm static nên sử dụng chúng bạn không cầ
 
 **Example**
 
-    Str::startsWith("http://mytour.vn/3059-khach-san-time-door.html", "time-door"); // return true
+    Str::startsWith("http://mytour.vn/3059-khach-san-time-door.html", "http"); // return true
 
-####Kiểm tra 1 chuỗi có kết thúc bằng chuỗi khác không####
+####$ Kiểm tra 1 chuỗi có kết thúc bằng chuỗi khác không####
 
 **Method**
 
@@ -31,7 +31,7 @@ Lớp `Str` bao gồm các hàm static nên sử dụng chúng bạn không cầ
 
 **Example**
 
-    Str::endsWith("http://mytour.vn/3059-khach-san-time-door.html", "http"); // return true
+    Str::endsWith("http://mytour.vn/3059-khach-san-time-door.html", "html"); // return true
 
 ####Cắt chuỗi với 1 số ký tự nhất định, tự kiểm tra vị trí dấu cách để trả về kết quả tròn từ####
 
@@ -112,7 +112,7 @@ Lớp `Str` bao gồm các hàm static nên sử dụng chúng bạn không cầ
 
 **Example**
 
-    Str::removeAccent("Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.");
+    Str::removeAccent("Có con chim vành khuyên nhỏ");
 
 
 ####Convert 1 chuỗi bất kỳ về dạng "chuoi-bat-ky"####
