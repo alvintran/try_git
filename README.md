@@ -3,7 +3,7 @@ Lớp Str
 
 Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hiện của lớp để sử dụng chúng.
 
-####$ Kiểm tra 1 chuỗi có chứa 1 chuỗi khác không####
+####~ Kiểm tra 1 chuỗi có chứa 1 chuỗi khác không####
 
 **Method**
   
@@ -13,7 +13,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::constain("http://mytour.vn/3059-khach-san-time-door.html", "time-door"); // return true
 
-####$ Kiểm tra 1 chuỗi có bắt đầu bằng chuỗi khác không####
+####~ Kiểm tra 1 chuỗi có bắt đầu bằng chuỗi khác không####
 
 **Method**
 
@@ -23,7 +23,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::startsWith("http://mytour.vn/3059-khach-san-time-door.html", "http"); // return true
 
-####$ Kiểm tra 1 chuỗi có kết thúc bằng chuỗi khác không####
+####~ Kiểm tra 1 chuỗi có kết thúc bằng chuỗi khác không####
 
 **Method**
 
@@ -33,7 +33,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::endsWith("http://mytour.vn/3059-khach-san-time-door.html", "html"); // return true
 
-####Cắt chuỗi với 1 số ký tự nhất định, tự kiểm tra vị trí dấu cách để trả về kết quả tròn từ####
+####~ Cắt chuỗi với 1 số ký tự nhất định, tự kiểm tra vị trí dấu cách để trả về kết quả tròn từ####
 
 **Method**
 
@@ -44,7 +44,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
     Str::cut_string("Lorem ipsum dolor sit amet, consectetur adipisicing elit.", 5);
 
 
-####Cắt chuỗi với 1 giới hạn nhất định, cắt đúng số giới hạn truyền vào####
+####~ Cắt chuỗi với 1 giới hạn nhất định, cắt đúng số giới hạn truyền vào####
 
 **Method**
 
@@ -54,7 +54,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::limits("Lorem ipsum dolor sit amet, consectetur adipisicing elit.", 5);
 
-####Cắt chuỗi với 1 giới hạn số từ nhất định####
+####~ Cắt chuỗi với 1 giới hạn số từ nhất định####
 
 **Method**
 
@@ -64,7 +64,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::words("Lorem ipsum dolor sit amet, consectetur adipisicing elit.", 5);
 
-####Generate 1 chuỗi ngẫu nhiên####
+####~ Generate 1 chuỗi ngẫu nhiên####
 
 **Method**
 
@@ -74,7 +74,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::random();
 
-####Upper case 1 chuỗi####
+####~ Upper case 1 chuỗi####
 
 **Method**
 
@@ -84,7 +84,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::upper("Lorem ipsum dolor sit amet, consectetur adipisicing elit.");
 
-####Lower case 1 chuỗi####
+####~ Lower case 1 chuỗi####
 
 **Method**
 
@@ -94,7 +94,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::lower("Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.");
 
-####Lấy độ dài 1 chuỗi####
+####~ Lấy độ dài 1 chuỗi####
 
 **Method**
 
@@ -104,7 +104,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
     Str::length("Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.");
 
-####Bỏ dấu, replace các ký tự UTF8 về ký tự Latin####
+####~ Bỏ dấu, replace các ký tự UTF8 về ký tự Latin####
 
 **Method**
 
@@ -115,7 +115,7 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
     Str::removeAccent("Có con chim vành khuyên nhỏ");
 
 
-####Convert 1 chuỗi bất kỳ về dạng "chuoi-bat-ky"####
+####~ Convert 1 chuỗi bất kỳ về dạng "chuoi-bat-ky"####
 
 **Method**
 
