@@ -11,8 +11,8 @@ Lớp `Str` bao gồm các hàm static, bạn không cần phải tạo thể hi
 
 **Example**
 
-    Str::constain("http://mytour.vn/3059-khach-san-time-door.html", "time-door"); // return true
-    Str::constain("http://mytour.vn/3059-khach-san-time-door.html", array("time-door", "khach-san")); // return true
+    Str::contains("http://mytour.vn/3059-khach-san-time-door.html", "time-door"); // return true
+    Str::contains("http://mytour.vn/3059-khach-san-time-door.html", array("time-door", "khach-san")); // return true
 
 ####~ Kiểm tra 1 chuỗi có bắt đầu bằng chuỗi khác không####
 
