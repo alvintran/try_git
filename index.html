@@ -1,78 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Document coffee core by alvintran</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <title>Document coffee core by alvintran</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/alvintran/try_git">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/alvintran/try_git/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/alvintran/try_git/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <header>
+      <div class="inner">
+        <h1>Document coffee core</h1>
+        <h2></h2>
+        <a href="https://github.com/alvintran/try_git" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-    <div class="wrapper">
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="l%E1%BB%9Bp-str" class="anchor" href="#l%E1%BB%9Bp-str"><span class="octicon octicon-link"></span></a>Lớp Str</h1>
 
-      <section>
-        <div id="title">
-          <h1>Document coffee core</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/alvintran">alvintran</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+<p>Lớp <code>Str</code> bao gồm các hàm static, bạn không cần phải tạo thể hiện của lớp để sử dụng chúng.</p>
 
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<h4>
+<a name="-ki%E1%BB%83m-tra-1-chu%E1%BB%97i-c%C3%B3-ch%E1%BB%A9a-1-chu%E1%BB%97i-kh%C3%A1c-kh%C3%B4ng" class="anchor" href="#-ki%E1%BB%83m-tra-1-chu%E1%BB%97i-c%C3%B3-ch%E1%BB%A9a-1-chu%E1%BB%97i-kh%C3%A1c-kh%C3%B4ng"><span class="octicon octicon-link"></span></a>~ Kiểm tra 1 chuỗi có chứa 1 chuỗi khác không</h4>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p><strong>Method</strong></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>Str::contains($haystack, $needle);
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p><strong>Example</strong></p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<pre><code>Str::contains("http://mytour.vn/3059-khach-san-time-door.html", "time-door"); // return true
+Str::contains("http://mytour.vn/3059-khach-san-time-door.html", array("time-door", "khach-san")); // return true
+</code></pre>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h4>
+<a name="-ki%E1%BB%83m-tra-1-chu%E1%BB%97i-c%C3%B3-b%E1%BA%AFt-%C4%91%E1%BA%A7u-b%E1%BA%B1ng-chu%E1%BB%97i-kh%C3%A1c-kh%C3%B4ng" class="anchor" href="#-ki%E1%BB%83m-tra-1-chu%E1%BB%97i-c%C3%B3-b%E1%BA%AFt-%C4%91%E1%BA%A7u-b%E1%BA%B1ng-chu%E1%BB%97i-kh%C3%A1c-kh%C3%B4ng"><span class="octicon octicon-link"></span></a>~ Kiểm tra 1 chuỗi có bắt đầu bằng chuỗi khác không</h4>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><strong>Method</strong></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<pre><code>Str::startsWith($haystack, $needle);
+</code></pre>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p><strong>Example</strong></p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<pre><code>Str::startsWith("http://mytour.vn/3059-khach-san-time-door.html", "http"); // return true
+Str::startsWith("http://mytour.vn/3059-khach-san-time-door.html", "http, html"); // return true
+</code></pre>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h4>
+<a name="-ki%E1%BB%83m-tra-1-chu%E1%BB%97i-c%C3%B3-k%E1%BA%BFt-th%C3%BAc-b%E1%BA%B1ng-chu%E1%BB%97i-kh%C3%A1c-kh%C3%B4ng" class="anchor" href="#-ki%E1%BB%83m-tra-1-chu%E1%BB%97i-c%C3%B3-k%E1%BA%BFt-th%C3%BAc-b%E1%BA%B1ng-chu%E1%BB%97i-kh%C3%A1c-kh%C3%B4ng"><span class="octicon octicon-link"></span></a>~ Kiểm tra 1 chuỗi có kết thúc bằng chuỗi khác không</h4>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+<p><strong>Method</strong></p>
 
+<pre><code>Str::endsWith($haystack, $needle);
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::endsWith("http://mytour.vn/3059-khach-san-time-door.html", "html"); // return true
+Str::endsWith("http://mytour.vn/3059-khach-san-time-door.html", "http, html"); // return true
+</code></pre>
+
+<h4>
+<a name="-c%E1%BA%AFt-chu%E1%BB%97i-v%E1%BB%9Bi-1-s%E1%BB%91-k%C3%BD-t%E1%BB%B1-nh%E1%BA%A5t-%C4%91%E1%BB%8Bnh-t%E1%BB%B1-ki%E1%BB%83m-tra-v%E1%BB%8B-tr%C3%AD-d%E1%BA%A5u-c%C3%A1ch-%C4%91%E1%BB%83-tr%E1%BA%A3-v%E1%BB%81-k%E1%BA%BFt-qu%E1%BA%A3-tr%C3%B2n-t%E1%BB%AB" class="anchor" href="#-c%E1%BA%AFt-chu%E1%BB%97i-v%E1%BB%9Bi-1-s%E1%BB%91-k%C3%BD-t%E1%BB%B1-nh%E1%BA%A5t-%C4%91%E1%BB%8Bnh-t%E1%BB%B1-ki%E1%BB%83m-tra-v%E1%BB%8B-tr%C3%AD-d%E1%BA%A5u-c%C3%A1ch-%C4%91%E1%BB%83-tr%E1%BA%A3-v%E1%BB%81-k%E1%BA%BFt-qu%E1%BA%A3-tr%C3%B2n-t%E1%BB%AB"><span class="octicon octicon-link"></span></a>~ Cắt chuỗi với 1 số ký tự nhất định, tự kiểm tra vị trí dấu cách để trả về kết quả tròn từ</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::cut_string($str, $limit, $end = '...');
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::cut_string("Lorem ipsum dolor sit amet, consectetur adipisicing elit.", 5);
+</code></pre>
+
+<h4>
+<a name="-c%E1%BA%AFt-chu%E1%BB%97i-v%E1%BB%9Bi-1-gi%E1%BB%9Bi-h%E1%BA%A1n-nh%E1%BA%A5t-%C4%91%E1%BB%8Bnh-c%E1%BA%AFt-%C4%91%C3%BAng-s%E1%BB%91-gi%E1%BB%9Bi-h%E1%BA%A1n-truy%E1%BB%81n-v%C3%A0o" class="anchor" href="#-c%E1%BA%AFt-chu%E1%BB%97i-v%E1%BB%9Bi-1-gi%E1%BB%9Bi-h%E1%BA%A1n-nh%E1%BA%A5t-%C4%91%E1%BB%8Bnh-c%E1%BA%AFt-%C4%91%C3%BAng-s%E1%BB%91-gi%E1%BB%9Bi-h%E1%BA%A1n-truy%E1%BB%81n-v%C3%A0o"><span class="octicon octicon-link"></span></a>~ Cắt chuỗi với 1 giới hạn nhất định, cắt đúng số giới hạn truyền vào</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::limits($str, $limit, $end = '...');
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::limits("Lorem ipsum dolor sit amet, consectetur adipisicing elit.", 5);
+</code></pre>
+
+<h4>
+<a name="-c%E1%BA%AFt-chu%E1%BB%97i-v%E1%BB%9Bi-1-gi%E1%BB%9Bi-h%E1%BA%A1n-s%E1%BB%91-t%E1%BB%AB-nh%E1%BA%A5t-%C4%91%E1%BB%8Bnh" class="anchor" href="#-c%E1%BA%AFt-chu%E1%BB%97i-v%E1%BB%9Bi-1-gi%E1%BB%9Bi-h%E1%BA%A1n-s%E1%BB%91-t%E1%BB%AB-nh%E1%BA%A5t-%C4%91%E1%BB%8Bnh"><span class="octicon octicon-link"></span></a>~ Cắt chuỗi với 1 giới hạn số từ nhất định</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::words($str, $limit, $end = '...');
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::words("Lorem ipsum dolor sit amet, consectetur adipisicing elit.", 5);
+</code></pre>
+
+<h4>
+<a name="-generate-1-chu%E1%BB%97i-ng%E1%BA%ABu-nhi%C3%AAn" class="anchor" href="#-generate-1-chu%E1%BB%97i-ng%E1%BA%ABu-nhi%C3%AAn"><span class="octicon octicon-link"></span></a>~ Generate 1 chuỗi ngẫu nhiên</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::random($length = 16);
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::random();
+</code></pre>
+
+<h4>
+<a name="-upper-case-1-chu%E1%BB%97i" class="anchor" href="#-upper-case-1-chu%E1%BB%97i"><span class="octicon octicon-link"></span></a>~ Upper case 1 chuỗi</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::upper($value);
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::upper("Lorem ipsum dolor sit amet, consectetur adipisicing elit.");
+</code></pre>
+
+<h4>
+<a name="-lower-case-1-chu%E1%BB%97i" class="anchor" href="#-lower-case-1-chu%E1%BB%97i"><span class="octicon octicon-link"></span></a>~ Lower case 1 chuỗi</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::lower($value);
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::lower("Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.");
+</code></pre>
+
+<h4>
+<a name="-l%E1%BA%A5y-%C4%91%E1%BB%99-d%C3%A0i-1-chu%E1%BB%97i" class="anchor" href="#-l%E1%BA%A5y-%C4%91%E1%BB%99-d%C3%A0i-1-chu%E1%BB%97i"><span class="octicon octicon-link"></span></a>~ Lấy độ dài 1 chuỗi</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::length($value);
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::length("Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.");
+</code></pre>
+
+<h4>
+<a name="-b%E1%BB%8F-d%E1%BA%A5u-replace-c%C3%A1c-k%C3%BD-t%E1%BB%B1-utf8-v%E1%BB%81-k%C3%BD-t%E1%BB%B1-latin" class="anchor" href="#-b%E1%BB%8F-d%E1%BA%A5u-replace-c%C3%A1c-k%C3%BD-t%E1%BB%B1-utf8-v%E1%BB%81-k%C3%BD-t%E1%BB%B1-latin"><span class="octicon octicon-link"></span></a>~ Bỏ dấu, replace các ký tự UTF8 về ký tự Latin</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::removeAccent($value);
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str::removeAccent("Có con chim vành khuyên nhỏ");
+</code></pre>
+
+<h4>
+<a name="-convert-1-chu%E1%BB%97i-b%E1%BA%A5t-k%E1%BB%B3-v%E1%BB%81-d%E1%BA%A1ng-chuoi-bat-ky" class="anchor" href="#-convert-1-chu%E1%BB%97i-b%E1%BA%A5t-k%E1%BB%B3-v%E1%BB%81-d%E1%BA%A1ng-chuoi-bat-ky"><span class="octicon octicon-link"></span></a>~ Convert 1 chuỗi bất kỳ về dạng "chuoi-bat-ky"</h4>
+
+<p><strong>Method</strong></p>
+
+<pre><code>Str::slug($title, $separator = "-");
+</code></pre>
+
+<p><strong>Example</strong></p>
+
+<pre><code>Str:: slug("Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit.");
+</code></pre>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/alvintran/try_git/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/alvintran/try_git/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/alvintran/try_git"></a> is maintained by <a href="https://github.com/alvintran">alvintran</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+  
   </body>
 </html>
